@@ -1,7 +1,7 @@
 node('master'){
    
    stage('git checkout'){
-                  git 'https://github.com/jyotheesh/Inglibrary.git'
+                  git 'https://github.com/akash64574/Inglibrary.git'
               }
    stage('java build'){
              sh '/opt/maven/bin/mvn clean verify sonar:sonar -Dsonar.password=admin -Dsonar.login=admin'
